@@ -1,0 +1,164 @@
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.landing{
+background-image: url('../image/Beauty-Nature-Wallpaper-1080x1920.jpg');
+background-size: cover;
+background-position: center;
+height:100vh;
+color: white;
+}
+
+header a{
+    text-decoration: none;
+    color: yellow;
+    text-transform: capitalize;
+}
+header{
+    display: flex;
+    padding: 1em;
+}
+#logo{
+    flex:3;
+}
+nav{
+    flex: 2;
+    display: flex;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: green;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: rgb(0, 255, 221);
+    font-size: 1.5em;
+    font-weight: bold;
+ text-transform: capitalize;
+}
+.tagline2{
+    color: yellow;
+    text-transform: capitalize;
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .4em;
+    background-color: green;
+    color: white;
+border: 1px solid rgb(7, 7, 7);
+text-transform: capitalize;
+}
+.maintext button:hover{
+    color: rgb(43, 174, 226);
+}
+.menu{
+    display: grid;
+    background:linear-gradient(to right,rgb(100,100,100),rgb(52,53,54)); 
+    color: white;
+    grid-template-columns:repeat(auto-fit,minmax(143px,1fr));
+}
+#menuheading,#locheading{
+    
+    background:linear-gradient(to right,rgb(100,100,100),rgb(52,53,54)); 
+font-size: 1.5em;
+color: rgb(103, 200, 207);
+display: flex;
+justify-content: center;
+}
+
+.menu th{
+    color: greenyellow;
+    font-size: 1.5em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.location{
+    background:linear-gradient(to right,rgb(100,100,100),rgb(52,53,54)); 
+color: white;
+display: flex;
+flex-wrap: wrap;
+}
+.location h2{
+    color:greenyellow;
+    margin-bottom: .8em;
+}
+.location div{
+    flex: 1;
+    padding: 1em;
+    min-width: 50px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: .25em 1 em;
+}
+/* animation and transition */
+.circle{
+    width: 50px;
+    height: 50px;
+    padding:5px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 470px;
+    left: 50px;
+    background-color: aqua;
+}
+.circle{
+    transition-duration: 2s;
+    transition-property: all;
+    transform-style: flat;
+    transform-origin: 0%;
+}
+.circle{
+    animation-name: ani;
+    animation-duration:2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+}
+@keyframes ani {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate:390deg;
+        }
+    50%{
+        background-color: rgb(100, 100, 168);
+    }
+    100%{
+    background-color: darkseagreen;
+    
+    }
+}
